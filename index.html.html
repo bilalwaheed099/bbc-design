@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BBC</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .nav{
+                width: 100%;
+                background: black;
+            }
+            .nav__list{
+                overflow: hidden;
+                color: white;
+                padding: 2px;
+                height:inherit;
+                height: 42px;
+                width: 80%;
+                margin: auto;
+
+            }
+            .nav__list-item-logo{
+                float: left;
+                list-style: none;
+                height: inherit;
+                margin: 0 20px;
+                padding: 10px 12px;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+            .nav__list-item{
+                float: left;
+                list-style: none;
+                height: inherit;
+                margin: 0 20px;
+                border-left:1px solid white;
+                padding: 10px 12px;
+                font-weight: bold;
+
+            }
+
+            .table{
+
+            }
+            #top-table{
+                width: 80%;
+                margin: auto;
+                margin-top: 15px;
+            }
+            #news-table{
+                width: 60%;
+                margin: auto;
+                margin-left: 160px;
+
+            }
+            .ad{
+                background: black;
+                color: black;
+            }
+            #weather-table{
+
+            }
+            .leftWidth{
+                margin-left: 160px;
+            }
+            .reel{
+                width:100%;
+                background: #7A6548;
+                color: white;
+                height: 420px;
+                padding: 20px 0;
+            }
+            #reel-table{
+                width: 80%;
+                margin: auto;
+            }
+            .asia-news-table{
+                width: 80%;
+                margin: auto;
+            }
+
+            .editor-part{
+                background:rgb(246,246,246);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+            }
+            .big-table{
+                margin: auto;
+            }
+            .big-table > tr {
+                margin: 5px
+            }
+            .big-table > tr > td {
+                border: 1em solid transparent;
+            }
+            .tree-part{
+                background-image: url('./bigtable/tree.png');
+                width: 100%;
+                background-repeat:inherit;
+                color: white;
+                padding: 40px;
+
+
+            }
+            .tree-part-table{
+                width: 80%;
+                margin: auto;
+            }
+            .logo{
+                color: black;
+                background: white;
+                font-weight: bold;
+                padding: 3px 8px;
+                margin: 1px;
+                font-size: 1.2rem;
+            }
+
+
+        </style>
+        <!-- nav bar -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item-logo">
+                    <span class='logo'>B</span>
+                    <span class='logo'>B</span>
+                    <span class='logo'>C</span>
+                </li>
+                <li class="nav__list-item">Sign In</li>
+                <li class="nav__list-item">Home</li>
+                <li class="nav__list-item">News</li>
+                <li class="nav__list-item">Sport</li>
+                <li class="nav__list-item">Reel</li>
+                <li class="nav__list-item">Worklife</li>
+                <li class="nav__list-item">Travel</li>
+                <li class="nav__list-item">Future</li>
+                <li class="nav__list-item">Culture</li>
+                <li class="nav__list-item">More</li>
+            </ul>
+        </nav>
+        <div style='clear: both;'></div>
+
+        <br><br>
+        <!-- table 1 -->
+        <table id='top-table' class='table'>
+            <tr>
+
+                <td><h1>WELCOME TO BBC.com</h1></td>
+                <td colspan=2></td>
+                <td><h1>Thursday, 29 October</h1><br></td>
+            </tr>
+
+            <tr>
+                <td rowspan=2 colspan=2><img src="./img/img1.png" alt=""></td>
+                <td ><img src="./img/img2.png" alt=""></td>
+                <td ><img src="./img/img3.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./img/img4.png" alt=""></td>
+                <td><img src="./img/img5.png" alt=""></td>
+            </tr>
+        </table>
+
+        <table id='news-table' class= 'table leftWidth'>
+            <tr>
+                <td colspan=3><h3>NEWS</h3></td>
+            </tr>
+            <tr>
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan=3><h3>SPORTS</h3></td>
+            </tr>
+            <tr>
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan=3><h3>ELECTION 2020</h3></td>
+            </tr>
+            <tr>
+
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+                <td><img src="./midimg/img1.png" alt=""></td>
+            </tr>
+        </table>
+
+        <h2 class='leftWidth'>Weather Singapore</h2>
+        <br>
+        <table id='weather-table' class='leftWidth' style=''>
+            <tr>
+                <td><img src="./midimg/weatherimg.png" alt=""></td>
+                <td><img src="./midimg/weatherimg.png" alt=""></td>
+                <td><img src="./midimg/weatherimg.png" alt=""></td>
+                <td><img src="./midimg/weatherimg.png" alt=""></td>
+            </tr>
+        </table>
+        <br>
+
+        <div class='reel'>
+            <table id='reel-table'>
+                <tr>
+                    <td colspan=2><h1>REEL</h1></td>
+                    <td rowspan=2>Visit Reel</td>
+                </tr>
+                <tr>
+                    <td colspan=2><h3>The most amazing videos from BBC</h3></td>
+                </tr>
+                <tr>
+                    <td><img src="./midimg/reelimg.png" alt=""></td>
+                    <td><img src="./midimg/reelimg.png" alt=""></td>
+                    <td><img src="./midimg/reelimg.png" alt=""></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <h1 class='leftWidth'>Asia News</h1>
+        <br>
+        <table class='asia-news-table'>
+            <tr>
+                <td><img src="./midimg/asianews.png" alt=""></td>
+                <td><img src="./midimg/asianews.png" alt=""></td>
+                <td><img src="./midimg/asianews.png" alt=""></td>
+                <td><img src="./midimg/asianews.png" alt=""></td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- BIG TABLE  -->
+
+        <table class ='editor-part'>
+            <tr>
+                <td>
+                    <table id='big-table'>
+                        <tr>
+                            <td><h1>Editor's picks</h1></td>
+                        </tr>
+                        <tr>
+                            <td colspan=3><img src="./bigtable/img1.PNG" alt=""></td>
+                            <td><img src="./bigtable/img2.PNG" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                            <td><img src="./bigtable/img3.png" alt=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class='tree-part'>
+            <tr>
+                <td>
+                    <table class='tree-part-table ' style='border-spacing: 15px;' >
+                        <tr>
+                            <td colspan=2><h1>FUTURE PLANET</h1></td>
+                            <td rowspan=2><h4>Visit Future Planet</h4></td>
+                        </tr>
+                        <tr >
+                            <td colspan=2><h3>Solutions for a sustainable world.</h3>
+                            </td></tr>
+                        <tr>
+                        <tr>
+                            <td><img src="./bigtable/water.PNG" alt=""></td>
+                            <td><img src="./bigtable/water.PNG" alt=""></td>
+                            <td><img src="./bigtable/water.PNG" alt=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table style='
+            width: 80%;
+            margin: 30px auto;
+        '>
+            <tr>
+                <td>
+                    <h1>THE COLLECTION</h1>
+                    <img src="./nxt/img1.PNG" alt="">
+                </td>
+                <td>
+                    <h1> UNKNOWN QUESTIONS</h1>
+                    <img src="./nxt/img1.PNG" alt="">
+                </td>
+            </tr>
+        </table>
+
+
+        <table style='
+            width: 100%;
+            background-color: #F6F6F6;
+            padding: 35px;
+        '>
+            <tr>
+                <td colspan=3>
+                    <h1 style='margin-left: 120px;'>FEATURED VIDEO</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style='
+                    width: 80%;
+                    margin: auto;
+                    background:#363636;
+                    color: white;
+                '>
+                    <tr>
+                        <td colspan=3>
+                            <img src="./nxt/img2.PNG" alt="">
+                        </td>
+                    </tr>
+                    <tr style = 'border-bottom: 1px solid #4a4a4a'>
+                        <td colspan=3 >
+                            <h3 style = 'float:left; margin: 20px'>Recommended</h3>
+                            <h3 style = 'float:left; margin: 20px'>Most Watched</h3>
+                            <h3 style = 'float:left; margin: 20px'>Latest</h3>
+                            <div style='clear: both;'></div>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./nxt/img3.PNG" alt=""></td>
+                        <td><img src="./nxt/img3.PNG" alt=""></td>
+                        <td><img src="./nxt/img3.PNG" alt=""></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+
+        <table style='
+                width: 100%;
+                background-color: #F6F6F6;
+                padding: 35px;
+        '>
+                    <tr>
+                        <td colspan=3>
+                            <h1 style='margin-left: 120px;'>MORE AROUND THE BBC</h1>
+                        </td>
+                    </tr>
+            <tr>
+                <td>
+                    <table style='
+                        width: 80%;
+                        margin: auto;
+                        border-spacing: 5px;
+                    '>
+                        <tr>
+                            <td>
+                                <table style='width: 20%; border-spacing: 0;'>
+                                    <tr><td><h2 style='
+                                            background: red;
+                                            padding: 10px;
+                                            color: white;
+                                            width: 95%;
+                                            height: 40px;
+                                            text-align: center;
+                                        '>More From Our Correspondents</h2></td></tr>
+                                    <tr><td><img src="./nxt/img5.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img6.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img5.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img6.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img5.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img6.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img5.PNG" alt=""></td></tr>
+                                    <tr><td><img src="./nxt/img6.PNG" alt=""></td></tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td colspan=3>
+                                            <img src="./nxt/img4.PNG" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                        <td><img src="./nxt/img7.PNG" alt=""></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+
+        <table style='
+        width: 80%;
+        margin: 30px auto;
+    '>
+            <tr>
+                <td>
+                    <h2>TECHNOLOGY OF BUSINESS</h2>
+                    <img style='width: 90%' src="./nxt/img8.PNG" alt="">
+                </td>
+                <td>
+                    <h2>NEW TECH COMPANY</h2>
+                    <img style='width: 90%' src="./nxt/img8.PNG" alt="">
+                </td>
+            </tr>
+        </table>
+
+        <h1 style='margin-left: 180px'>WORLD IN PICTURES</h1>
+        <table style='
+            width: 80%;
+            margin: auto;
+            border-spacing: 5px;
+        '>
+            <tr>
+                <td style="display: flex;">
+                    <img style='margin:5px;' src="./nxt/IMG10.PNG" alt="">
+                    <img style='margin:5px;' src="./nxt/IMG10.PNG" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td style="display: flex;">
+                    <img style='margin:7px;' src="./nxt/IMG11.PNG" alt="">
+                    <img style='margin:7px;' src="./nxt/IMG11.PNG" alt="">
+                    <img style='margin:7px;' src="./nxt/IMG11.PNG" alt="">
+                </td>
+
+            </tr>
+        </table>
+
+<table style='background: #F2F2F2; width: 100%; height: 360px;'>
+    <tr>
+        <td>
+            <table style='background: #F2F2F2; width: 80%; height: 360px;margin:auto;'>
+                <tr>
+                    <td colspan=8>
+                        <h2>BCC IN OTHER LANGUAGES</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=8>
+                        <h2 style='float: left; margin-left:5px;'>Urdu</h2>
+                        <h2 style='float: left; margin-left:15px;'>Indonesian</h2>
+                        <h2 style='float: left; margin-left:15px;'>Japanese</h2>
+                        <h2 style='float: left; margin-left:15px;'>Vietnamese</h2>
+                        <h2 style='float: left; margin-left:15px;'>More Languages</h2>
+                        <h2 style='float: left; margin-left:15px;'></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>                <td>
+                        <ul style='list-style: none'>
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Portuguese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                            <li>Spanish</li>
+                            <li>French</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+        <table style='background: #4C4C4C; color: white; width: 100%; height: 250px'>
+            <tr>
+                <td>
+                    <table style='width: 80%;height: 250px; margin: auto; color: white !important'>
+                        <tr>
+                            <td colspan=10>
+                                <h2 >Explore the BBC</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style='' colspan=2>
+                                <h5>Home</h5><br>
+                                <h5>Future</h5>
+                            </td>
+                            <td style='border-left: 1px solid silver;padding:20px;' colspan=2>
+                                <h5>News</h5><br>
+                                <h5>Culture</h5>
+                            </td>
+                            <td style='border-left: 1px solid silver;padding:20px;' colspan=2>
+                                <h5>Sports</h5><br>
+                                <h5>Music</h5>
+                            </td>
+                            <td style='border-left: 1px solid silver;padding:20px;' colspan=2>
+                                <h5>Reel</h5><br>
+                                <h5>TV</h5>
+                            </td>
+                            <td style='border-left: 1px solid silver;padding:20px;' colspan=2>
+                                <h5>Worklife</h5><br>
+                                <h5>Travel</h5>
+                            </td>
+                            <td style='border-left: 1px solid silver; padding:20px;' colspan=2>
+                                <h5>Travel</h5><br>
+                                <h5>Sounds</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=20><hr></td></tr>
+                        <tr>
+                            <td colspan=2>Terms of Use</td>
+                            <td colspan=2>About the BBC</td>
+                            <td colspan=2>Privacy Policy</td>
+                            <td colspan=2>Cookies</td>
+                            <td colspan=2>Accessibility Help</td>
+                            <td colspan=2>Parental Guidance</td>
+                            <td colspan=2>Contact the BBC</td>
+                            <td colspan=2>Get Personalized Newsletters</td>
+                            <td colspan=2>Advertise with us</td>
+                            <td colspan=2>AdChoices / Do Noe Sell My Info</td>
+                        </tr>
+                        <tr>
+                            <td colspan=10>
+                                <p>Copyright &copy; 2020 BBC.The BBC is not responsible for
+                                    the content of external sites. Read about our approach to external linking.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
